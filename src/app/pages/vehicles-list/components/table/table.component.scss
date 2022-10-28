@@ -17,8 +17,9 @@
         width: 20%;
 
         @media only screen and (max-width: 767px) {
-            width: 25%;
+            width: calc(100% / 3);
         }
+
     }
 }
 

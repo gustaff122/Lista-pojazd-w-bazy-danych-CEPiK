@@ -1,7 +1,7 @@
 <div class="tab--nav type-4 d-flex align-items-center mt-3 mb-1">
   <div class="tab--element p-2">Marka</div>
   <div class="tab--element p-2">Model</div>
-  <div class="tab--element p-2">Rodzaj pojazdu</div>
+  <div class="tab--element p-2 d-none d-md-block">Rodzaj pojazdu</div>
   <div class="tab--element p-2 d-none d-md-block">
     Pojemność silnika [cm<sup>3</sup>]
   </div>
@@ -21,7 +21,7 @@
   <div class="tab--element py-1 px-2 d-none d-md-flex">
     {{ vehicle.attributes["pojemnosc-skokowa-silnika"] }}
   </div>
-  <div class="tab--element py-1 px-2">
+  <div class="tab--element py-1 px-2 d-none d-md-block">
     {{ vehicle.attributes["rodzaj-paliwa"] }}
   </div>
 </div>
