@@ -49,7 +49,6 @@ export class VehiclesListComponent {
       const paramsLastPage = Object.fromEntries(urlLastPageParams.entries());
       this.maxPage = parseInt(paramsLastPage['page'])
       this.spinner.hide()
-      console.log(res)
       this.vehicles = res.data
     })
   }
