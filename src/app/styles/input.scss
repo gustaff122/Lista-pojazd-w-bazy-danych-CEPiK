@@ -1,0 +1,31 @@
+.input {
+    font-family: 'IBM Plex Sans Condensed';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+
+    border: none;
+    outline: none;
+
+    
+    &:read-only {
+        opacity: 0.65;
+    }
+
+    &--label {
+        font-family: 'IBM Plex Sans Condensed';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    &--min {
+        border: none;
+        outline: none;
+
+        height: 30px;
+        width: 80px;
+        display: flex;
+        text-align: center;
+    }
+}

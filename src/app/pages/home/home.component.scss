@@ -1,0 +1,28 @@
+.home {
+    &--footer {
+        background-color: var(--smoke);
+        position: absolute;
+        bottom: 0;
+        border-radius: 43px 43px 0 0;
+        height: 20vh;
+    }
+
+    &--image {
+        position: absolute;
+        width: 630px;
+        top: -270px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media only screen and (max-width: 991px) {
+            width: 600px;
+            top: -260px;
+        }
+
+        @media only screen and (max-width: 575px) {
+            width: 400px;
+            top: -160px;
+        }
+        
+    }
+}

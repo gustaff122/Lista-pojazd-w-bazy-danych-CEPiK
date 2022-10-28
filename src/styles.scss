@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+@import './app/styles/typography.scss';
+@import './app/styles/variables.scss';
+@import './app/styles/buttons.scss';
+@import './app/styles/input.scss';
+
+@import "./app/styles/coolicons.scss";
+
+@import "../node_modules/ngx-spinner/animations/ball-scale-multiple.css";
+
+//NgSelect Main Theme
+@import "@ng-select/ng-select/themes/default.theme.css";
+//NgSelect Custom Styles
+@import './app/styles/ngselect.scss';
+
+@import 'ngx-toastr/toastr';
+

@@ -1,0 +1,15 @@
+<footer
+  class="paginator d-flex align-items-center justify-content-center py-3 mt-3"
+>
+  <div [ngClass]="page > 1 ? 'paginator--btn' : 'paginator--btn_disabled'">
+    <i (click)="goToPage(1)" class="text-light ci-chevron_duo_left"></i>
+    <i (click)="goToPage(page - 1)" class="text-light ci-chevron_left"></i>
+  </div>
+  <div class="mx-3 type-3">{{ page }}</div>
+  <div
+    [ngClass]="page < maxPage ? 'paginator--btn' : 'paginator--btn_disabled'"
+  >
+    <i (click)="goToPage(page + 1)" class="text-light ci-chevron_right"></i>
+    <i (click)="goToPage(maxPage)" class="text-light ci-chevron_duo_right"></i>
+  </div>
+</footer>

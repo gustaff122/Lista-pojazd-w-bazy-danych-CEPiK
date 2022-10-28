@@ -1,0 +1,21 @@
+.bg {
+    &--grass {
+        background-color: var(--grass);
+    }
+
+    &--sun {
+        background-color: var(--sun);
+    }
+
+    &--lava {
+        background-color: var(--lava);
+    }
+
+    &--frost {
+        background-color: var(--frost);
+    }
+
+    &--violet {
+        background-color: var(--violet);
+    }
+}

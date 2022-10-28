@@ -1,0 +1,24 @@
+.tab {
+    &--nav {
+        background-color: white;
+    }
+
+    &--row {
+  
+        background-color: var(--cloud-secondary);
+
+        &:hover {
+            background-color: var(--smoke-secondary);
+            cursor: pointer;
+        }
+    }
+
+    &--element {
+        width: 20%;
+
+        @media only screen and (max-width: 767px) {
+            width: 25%;
+        }
+    }
+}
+

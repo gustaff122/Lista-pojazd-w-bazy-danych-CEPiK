@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600&family=Russo+One&display=swap');
+
+.type {
+    &-1 {
+        font-family: 'Russo One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 72px;
+
+        @media only screen and (max-width: 991px) {
+            font-size: 58px;
+          }
+
+        @media only screen and (max-width: 767px) {
+            font-size: 52px;
+        }
+
+        @media only screen and (max-width: 700px) {
+            font-size: 48px;
+        }
+
+        @media only screen and (max-width: 576px) {
+            font-size: 36px;
+          }
+          
+    }
+
+    &-2 {
+        font-family: 'IBM Plex Sans Condensed';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 36px;
+
+        @media only screen and (max-width: 575px) {
+            font-size: 22px;
+          }
+    }
+
+    &-3 {
+        font-family: 'IBM Plex Sans Condensed';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 36px;
+    }
+
+    &-4 {
+        font-family: 'Russo One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+    }
+
+    &-section {
+        font-family: 'Russo One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    &-title {
+        font-family: 'Russo One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    &-value {
+        font-family: 'Russo One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 42px;
+    }
+
+    &-link {
+        font-family: 'Russo One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+
+        color: var(--sky)
+    }
+}

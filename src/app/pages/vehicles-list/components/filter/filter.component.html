@@ -1,0 +1,77 @@
+<form
+  (submit)="filter()"
+  [formGroup]="form"
+  class="row align-items-center mt-3 mt-md-5"
+>
+  <div class="col-12 d-flex flex-wrap px-0">
+    <div class="d-flex flex-column pe-1 filter--date">
+      <label class="input--label mb-1" for="dataOd">Rejestrowane od:</label>
+      <input
+        name="dataOd"
+        (change)="setDateTo()"
+        class="input p-2"
+        type="date"
+        formControlName="dataOd"
+      />
+    </div>
+
+    <div class="d-flex flex-column ps-1 pe-0 pe-md-1 filter--date">
+      <label class="input--label mb-1" for="dataDo">Rejestrowane do:</label>
+      <input
+        readonly
+        name="dataDo"
+        class="input p-2"
+        type="date"
+        formControlName="dataDo"
+      />
+    </div>
+
+    <div
+      class="d-flex flex-column ps-0 ps-md-1 pe-1 mt-3 mt-lg-0 filter--select"
+    >
+      <label class="input--label mb-1" for="typeSelector"
+        >Rodzaje pojazdów:</label
+      >
+
+      <div class="select--sm">
+        <ng-select
+          name="typeSelector"
+          [closeOnSelect]="true"
+          placeholder="Wybierz typ pojazdu"
+          notFoundText="Nie ma takiego typu."
+          [items]="vehiclesTypes"
+          bindLabel="name"
+          bindValue="name"
+          formControlName="filterRodzajPojazdu"
+        >
+        </ng-select>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column px-1 mt-3 mt-lg-0 filter--select">
+      <label class="input--label mb-1" for="fuelSelector"
+        >Rodzaje paliwa:</label
+      >
+
+      <div class="select--sm">
+        <ng-select
+          name="typeSelector"
+          [closeOnSelect]="true"
+          placeholder="Wybierz rodzaj paliwa"
+          notFoundText="Nie ma takiego rodzaju."
+          [items]="energyTypes"
+          bindLabel="name"
+          bindValue="name"
+          formControlName="filterRodzajPaliwa"
+        >
+        </ng-select>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column ps-1 mt-3 mt-lg-0 filter--search">
+      <button type="submit" class="button--md w-100">
+        <i class="ci-search"></i>
+      </button>
+    </div>
+  </div>
+</form>

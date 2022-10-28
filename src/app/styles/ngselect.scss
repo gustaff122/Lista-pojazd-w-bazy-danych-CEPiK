@@ -1,0 +1,92 @@
+.select {
+    font-family: 'IBM Plex Sans Condensed';
+    font-weight: 400;
+
+    .ng-select {
+        &[ng-reflect-placeholder] {
+            font-size: 24px;
+        }
+
+        .ng-arrow-wrapper {
+            margin-bottom: 8px;
+        }
+
+        .ng-clear-wrapper {
+            margin-bottom: 8px;
+        }
+
+        .ng-select-container {
+            border: none;
+            outline: none;
+            border: 1px solid #BCBCBC;
+            border-right: none;
+            border-radius: 0px;
+            
+            padding: 30px;
+
+            input {
+                font-size: 24px;
+                margin: 8px 0 0 6px;
+                width: 90% !important
+            }
+        }
+
+        .ng-value-container {
+            padding: 0;
+        }
+
+        .ng-value-label {
+            font-size: 24px;
+            padding: 0;
+        }
+
+        .ng-input {
+            margin-left: 15px;
+            
+        }
+
+        .ng-option {
+            text-align: start;
+        }
+    }
+
+    &--sm {
+        .ng-select {
+            &[ng-reflect-placeholder] {
+                font-size: 17px;
+            }
+
+            .ng-placeholder {
+                margin-top: 1px;
+                margin-left: 10px;
+            }
+    
+            .ng-select-container {
+                border: none;
+                outline: none;
+                border-radius: 0px;
+                padding: 6.75px 0;
+                height: 49px !important;
+                
+    
+                input {
+                    margin-top: 8px;
+                    font-size: 17px;
+                    width: 90% !important
+                }
+            }
+    
+            .ng-value-container {
+                padding: 0;
+            }
+    
+            .ng-value-label {
+                font-size: 17px;
+                padding: 0;
+                padding-top: 5px !important;
+                padding-left: 10px !important;
+            }
+
+        }
+    }
+}

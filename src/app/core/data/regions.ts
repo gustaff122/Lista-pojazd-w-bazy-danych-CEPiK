@@ -1,0 +1,18 @@
+export const regions = [
+    { name: 'Dolnośląskie', id: '02' },
+    { name: 'Kujawsko-Pomorskie', id: '04' },
+    { name: 'Lubelskie', id: '06' },
+    { name: 'Lubuskie', id: '08' },
+    { name: 'Łódzkie', id: '10' },
+    { name: 'Małopolskie', id: '12' },
+    { name: 'Mazowieckie', id: '14' },
+    { name: 'Opolskie', id: '16' },
+    { name: 'Podkarpackie', id: '18' },
+    { name: 'Podlaskie', id: '20' },
+    { name: 'Pomorskie', id: '22' },
+    { name: 'Śląskie', id: '24' },
+    { name: 'Świętokrzyskie', id: '26' },
+    { name: 'Warmińsko-Mazurskie', id: '28' },
+    { name: 'Wielkopolskie', id: '30' },
+    { name: 'Zachodniopomorskie', id: '32' },
+];

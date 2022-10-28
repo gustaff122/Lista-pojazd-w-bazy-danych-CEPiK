@@ -1,0 +1,17 @@
+.button {
+    height: 62px;
+    width: 62px;
+    border: 1px solid #BCBCBC;
+    border-left: none;
+    outline: none;
+    background-color: #5A90CC;
+
+    &--md {
+        height: 49px;
+        outline: none;
+        background-color: #5A90CC;
+        border: none;
+        color: white;
+        font-size: 24px;
+    }
+}

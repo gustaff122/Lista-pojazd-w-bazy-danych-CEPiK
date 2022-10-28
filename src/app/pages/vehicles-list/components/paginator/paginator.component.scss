@@ -1,0 +1,15 @@
+
+.paginator {
+    color: white;
+    background-color: var(--night);
+
+    &--btn {
+        cursor: pointer;
+
+        &_disabled {
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+    
+}

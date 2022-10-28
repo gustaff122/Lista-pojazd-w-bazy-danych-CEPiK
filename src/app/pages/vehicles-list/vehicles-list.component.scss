@@ -1,0 +1,9 @@
+.background {
+    background-color: var(--smoke);
+    min-height: 100vh;
+    width: 100%;
+    position: fixed;
+    display: block;
+    z-index: -1;
+    top: 0;
+}

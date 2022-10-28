@@ -1,0 +1,27 @@
+<ngx-spinner type="ball-scale-multiple"></ngx-spinner>
+
+<div class="container">
+  <div class="row">
+    <h1 class="type-1 mt-5 px-0">Przeglądaj listę pojazdów</h1>
+    <h3 class="type-2 mt-2 px-0">
+      Zobacz pojazdy rejestrowane w dwuletnim okresie.
+    </h3>
+
+    <a [routerLink]="['/home']" class="type-link px-0"
+      >Wróć do listy województw.</a
+    >
+  </div>
+  <app-filter (formData)="getFilters($event)"></app-filter>
+
+  <div class="row">
+    <app-table class="px-0" [vehicles]="vehicles"></app-table>
+  </div>
+</div>
+
+<app-paginator
+  (pageVal)="setPage($event)"
+  [page]="page"
+  [maxPage]="maxPage"
+></app-paginator>
+
+<div class="background"></div>
