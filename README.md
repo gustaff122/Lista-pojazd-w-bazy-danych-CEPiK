@@ -12,4 +12,4 @@ Niestety, ale CEPiK ma poblokowane CORSy. Aby obejść ten problem skorzystałem
 
 ## GitHub Pages
 
-https://gustaff122.github.io/CEPiKVehicles/
+https://gustaff122.github.io/Lista-pojazd-w-bazy-danych-CEPiK/
