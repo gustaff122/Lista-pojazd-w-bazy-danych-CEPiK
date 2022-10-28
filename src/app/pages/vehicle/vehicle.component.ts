@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Vehicle } from 'src/app/core/interfaces/vehicle.interface';
 
 @Component({
   templateUrl: './vehicle.component.html',
@@ -7,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class VehicleComponent {
 
-  public data = this.activatedRoute.snapshot.data[0].data.attributes
+  public data: Vehicle = this.activatedRoute.snapshot.data[0].data.attributes
 
   constructor(
     private activatedRoute: ActivatedRoute
