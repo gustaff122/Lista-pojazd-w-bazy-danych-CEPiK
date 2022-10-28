@@ -1,6 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Resolve, ActivatedRouteSnapshot, RouterStateSnapshot, Router } from "@angular/router";
-import { Observable } from "rxjs";
+import { catchError, map, Observable, of } from "rxjs";
 import { PojazdyService } from "../services/pojazdy.service";
 
 
@@ -17,7 +17,12 @@ export class VehicleResolver implements Resolve<any> {
   ): Observable<any> {
       const id = route.params['id'];
       
-      return this.pojazdyService.getVehicle(id)
+      return this.pojazdyService.getVehicle(id).pipe(map(item => {
+        return item
+      }), catchError(() => {
+        this.router.navigate(['/'])
+        return of(null)
+      }))
   }
   
 }
